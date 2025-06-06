@@ -146,64 +146,65 @@
   </nav>
 
   <section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center flex-column flex-md-row" data-scrollax-parent="true">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center flex-column flex-md-row" data-scrollax-parent="true">
 
-          <!-- Text Column -->
-          <div class="col-md-6 d-flex align-items-center ftco-animate">
-            <div class="text text-center text-md-left">
-              <span class="subheading">Hello!</span>
-              <h1 class="mb-4 mt-3">I'm <span>Shagufta Pathan</span></h1>
+            <!-- Text Column -->
+            <div class="col-12 col-md-6 d-flex align-items-center ftco-animate mb-4 mb-md-0">
+              <div class="text text-center text-md-left w-100">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm <span>Shagufta Pathan</span></h1>
 
-              <!-- Typing animation -->
-              <span id="typing-animation"></span>
+                <!-- Typing animation -->
+                <span id="typing-animation"></span>
 
-              <script>
-                const typingAnimationElement = document.getElementById('typing-animation');
-                const typingTexts = [
-                  'Data Analyst  ',
-                  'Business Analyst  ',
-                  'Ex-Medical Faculty   ',
-                ];
-
-                function playTypingAnimation(text) {
-                  for (let i = 0; i < text.length; i++) {
-                    setTimeout(() => {
-                      typingAnimationElement.textContent += text[i];
-                    }, i * 200);
-                  }
-                  setTimeout(() => {
-                    typingAnimationElement.textContent = '';
-                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                  }, text.length * 200);
-                }
-
-                playTypingAnimation(typingTexts[0]);
-              </script>
-
-              <br><br>
-              <h2>Data Analyst</h2>
-              <br>
-              <p>
-                <a href="https://www.linkedin.com/in/shagufta-pathan-sp48/" class="btn btn-primary py-3 px-4">LinkedIn</a>
-                <a href="https://github.com/ShaguftaPathan" class="btn btn-white btn-outline-white py-3 px-4">Github</a>
-              </p>
+                <br><br>
+                <h2>Data Analyst</h2>
+                <br>
+                <p>
+                  <a href="https://www.linkedin.com/in/shagufta-pathan-sp48/" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                  <a href="https://github.com/ShaguftaPathan" class="btn btn-white btn-outline-white py-3 px-4">Github</a>
+                </p>
+              </div>
             </div>
-          </div>
 
-          <!-- Image Column -->
-          <div class="col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-            <img src="images/sp_1a.png" alt="Profile" class="img-fluid" style="max-width: 450px; border-radius: 10px;">
-          </div>
+            <!-- Image Column -->
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img src="images/sp_1a.png" alt="Profile" class="img-fluid" style="max-width: 450px; border-radius: 10px;">
+            </div>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <script>
+      const typingAnimationElement = document.getElementById('typing-animation');
+      const typingTexts = [
+        'Data Analyst  ',
+        'Business Analyst  ',
+        'Ex-Medical Faculty   ',
+      ];
+
+      function playTypingAnimation(text) {
+        for (let i = 0; i < text.length; i++) {
+          setTimeout(() => {
+            typingAnimationElement.textContent += text[i];
+          }, i * 200);
+        }
+        setTimeout(() => {
+          typingAnimationElement.textContent = '';
+          playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+        }, text.length * 200 + 1000);
+      }
+
+      playTypingAnimation(typingTexts[0]);
+    </script>
   </section>
+
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
   <div class="container">
     <div class="row d-flex align-items-stretch">
@@ -215,6 +216,7 @@
             <div class="skill-mf">
               <br>
               <p class="title-s">Skills</p>
+
               <p><strong>Data Visualization</strong></p>
               <div class="d-flex justify-content-between"><span>Power BI</span><span>5</span></div>
               <div class="progress">
@@ -286,14 +288,14 @@
             </p>
             <p>
               <a href="https://shaguftapathan.github.io/Dashboards/" class="btn btn-primary py-3 px-3">Dashboards</a>
-              <a href="https://www.linkedin.com/in/shagufta-pathan-sp48/" class="btn btn-white btn-outline-white py-3 px-3">LinkedIn</a>
-              <a href="https://github.com/ShaguftaPathan" class="btn btn-white btn-outline-white py-3 px-3">GitHub</a>
+              <a href="https://www.linkedin.com/in/shagufta-pathan-sp48/" class="btn btn-white btn-outline-white py-3 px-3">Github</a>
+              <!-- <a href="https://github.com/ShaguftaPathan" class="btn btn-white btn-outline-white py-3 px-3">GitHub</a> -->
             </p>
           </div>
         </div>
       </div> <!-- End Right column -->
     </div> <!-- End d-flex row -->
-  </div>
+  </div> <!-- End container -->
 </section>
     <!-- <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
@@ -500,7 +502,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="150">0</strong>
+                <strong class="number" data-number="90">0</strong>
                 <span>Dashboards</span>
               </div>
             </div>
